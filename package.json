@@ -1,5 +1,5 @@
 {
-    "version": "3.0.1",
+    "version": "3.1.0",
     "name": "react-native-root-modal",
     "description": "react native modal component",
     "license": "MIT",
@@ -8,8 +8,7 @@
         "url": "https://github.com/magicismight/react-native-root-modal"
     },
     "dependencies": {
-        "react-native-root-siblings": "^3.0.0",
-        "react-redux": "*"
+        "react-native-root-siblings": "^3.1.0"
     },
     "main": "./lib/Modal.js",
     "keywords": [
