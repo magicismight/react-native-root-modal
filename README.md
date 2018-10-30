@@ -1,4 +1,4 @@
-### react-native-root-modal
+## react-native-root-modal [![npm version](https://badge.fury.io/js/react-native-root-modal.svg)](http://badge.fury.io/js/react-native-root-modal)
 
 ------------------------
 
