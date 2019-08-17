@@ -7,4 +7,6 @@ interface ModalProps extends ViewProps {
 
 export class Modal<ModalProps> {}
 
-export const AnimatedModal:any
+export const AnimatedModal: any;
+
+export { RootSiblings as ModalManager };
