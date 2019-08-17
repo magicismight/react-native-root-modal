@@ -4,10 +4,9 @@ import React, {
     Text,
     View,
     TouchableHighlight,
-    Animated
 } from 'react-native';
 
-import Modal from 'react-native-root-modal';
+import { AnimatedModal } from 'react-native-root-modal';
 
 const styles = StyleSheet.create({
     container: {
@@ -119,7 +118,7 @@ class Animation extends Component{
             >
                 <Text>Scale</Text>
             </TouchableHighlight>
-            <Animated.Modal
+            <AnimatedModal
                 visible={this.state.visible}
                 style={[styles.modal, {
                     transform: [
@@ -143,7 +142,7 @@ class Animation extends Component{
                 <View style={styles.modalContainer}>
                     <Text style={styles.text}>You can set any animation on Modal element</Text>
                 </View>
-            </Animated.Modal>
+            </AnimatedModal>
         </View>;
     }
 }

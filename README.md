@@ -17,7 +17,7 @@
 Import library any where inside your code before `AppRegistry.registerComponent` is called.
 
 ```
-import Modal from 'react-native-root-modal';
+import Modal, { AnimatedModal, ModalManager } from 'react-native-root-modal';
 ```
 
 Invoked by `React element` way.
@@ -50,7 +50,7 @@ Or you can invoke it by `JavaScript class` way
 
 Import modal Manager class.
 ```
-import {Manager as ModalManager} from 'react-native-root-modal';
+import { ModalManager } from 'react-native-root-modal';
 
 ```
 
