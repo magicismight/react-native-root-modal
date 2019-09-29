@@ -1,18 +1,23 @@
-## react-native-root-modal [![npm version](https://badge.fury.io/js/react-native-root-modal.svg)](http://badge.fury.io/js/react-native-root-modal)
+# react-native-root-modal [![npm version](https://badge.fury.io/js/react-native-root-modal.svg)](http://badge.fury.io/js/react-native-root-modal)
 
 ------------------------
 
-#### Features
+## Features
 1. Pure javascript solution, easy to install.
 2. Support both `React element` way and `javascript class` way to invoke, easy to use.
 3. Inherited from `<View />` you can set your own style or animation or anything you can do with View.
 4. redux support.
 
-#### Install
+## Breaking changes
+
+### 5.x
+From 5.x if you want to use redux context inside modal, you need to change `import Modal from 'react-native-root-modal';` redux `import Modal from 'react-native-root-modal/lib/Modal.redux';`. And the `react-redux` version must be at least `7.x`
+
+## Install
 
 `npm install react-native-root-modal`
 
-#### Usage
+## Usage
 
 Import library any where inside your code before `AppRegistry.registerComponent` is called.
 
@@ -70,15 +75,15 @@ modal.update(<View style={modal container style}>
 modal.destroy();
 ```
 
-#### Example
+## Example
 
-##### IOS
+### IOS
 ----
 ![Example](./Example/screenShoot.ios.gif)
 
-##### Android
+### Android
 ----
 ![Example](./Example/screenShoot.android.gif)
-#### Notice
+## Notice
 
 Modal element created by this library can\`t cover other `native` Modal elements,like: [Official Modal Element](http://facebook.github.io/react-native/docs/modal.html#content)
