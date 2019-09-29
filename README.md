@@ -11,7 +11,12 @@
 ## Breaking changes
 
 ### 5.x
-From 5.x if you want to use redux context inside modal, you need to change `import Modal from 'react-native-root-modal';` redux `import Modal from 'react-native-root-modal/lib/Modal.redux';`. And the `react-redux` version must be at least `7.x`
+From 5.x redux support is not enabled by default.
+To enable redux support this code below should be called be Modal be used.
+
+```
+import { enableStoreConsumer } from 'react-native-root-modal';
+```
 
 ## Install
 
