@@ -6,17 +6,24 @@
 1. Pure javascript solution, easy to install.
 2. Support both `React element` way and `javascript class` way to invoke, easy to use.
 3. Inherited from `<View />` you can set your own style or animation or anything you can do with View.
-4. redux support.
+4. ~~redux support~~.
 
 ## Breaking changes
 
 ### 5.x
 From 5.x redux support is not enabled by default.
-To enable redux support this code below should be called be Modal be used.
+The redux support can be enabled by setting a redux context wrapper.
 
 ```
-import { enableStoreConsumer } from 'react-native-root-modal';
+import { setSiblingWrapper } from 'react-native-root-siblings';
+import { Provider } from 'react-redux';
+
+// const store = ... get store;
+
+// Call this before using redux context inside RootSiblings.
+setSiblingWrapper((sibling) => <Provider store={store}>{sibling}</Provider>);
 ```
+
 
 ## Install
 
