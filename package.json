@@ -11,6 +11,9 @@
         "react-native-root-siblings": "^4.0.0"
     },
     "main": "./lib/Modal.js",
+    "files": [
+        "lib/"
+    ],
     "keywords": [
         "react-component",
         "react-native",
